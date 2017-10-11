@@ -1,0 +1,29 @@
+{
+  "name": "coinster-graphql",
+  "version": "1.0.0",
+  "description": "A graphql endpoint for coinster",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rumtraubenuss/coinster-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rumtraubenuss/coinster-graphql/issues"
+  },
+  "homepage": "https://github.com/rumtraubenuss/coinster-graphql#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql-tools": "^2.4.0"
+  }
+}
