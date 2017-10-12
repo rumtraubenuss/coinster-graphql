@@ -1,4 +1,5 @@
 const { makeExecutableSchema } = require('graphql-tools');
+const { countAllPrices: count } = require('./db');
 
 const dummyEntries = [
   { name: 'FOO' },
@@ -13,12 +14,14 @@ type Foo {
 
 type Query {
   foos: [Foo]
+  count: Int
 }
 `;
 
 const resolvers = {
   Query: {
     foos: () => dummyEntries,
+    count,
   }
 };
 
