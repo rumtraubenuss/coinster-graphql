@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/index.js"
+    "start": "nodemon -r dotenv/config ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/rumtraubenuss/coinster-graphql#readme",
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "nodemon": "^1.12.1"
   },
   "dependencies": {
